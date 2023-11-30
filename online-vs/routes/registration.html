@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- css -->
+     <!-- <link rel="stylesheet" href="../css/stylesheet.css"> -->
+
+    <title>registration_page</title>
+  </head>
+  <body>
+
+
+    <style>
+
+        #address{
+            width: 65%;
+        }
+        #imagepart{
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 10px;
+            width: 70%;
+            
+        }
+    
+        #role{
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 10px;
+            width: 50%;   
+        }
+    
+        #role select{
+            padding: 10px;
+            border-radius: 7px;
+        }
+        #container{
+            border: 2px solid rgb(187, 184, 184);
+            background-color: white;
+            margin-top: 27px;
+            border-radius: 5%;
+            padding: 10px;
+            width: 30%;   
+            background: transparent;
+            backdrop-filter: blur(90px);
+            box-shadow: 0 0 10 #0689ee;
+            
+        }
+        h1{
+            font-family: cursive;
+        }
+
+        
+    #back-link a{
+        text-decoration: none;
+        color: rgb(29, 8, 167);
+    }
+    
+
+    
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    text-align: center;
+    /* background-color: rgb(18, 18, 62); */
+    /* background-color: aquamarine;*/
+     
+      background-image: url('../css/loginpage.avif');
+    
+      background-repeat: no-repeat;
+     background-size: cover; 
+     
+     
+}
+
+#headerSection{
+    padding: 10px;
+}
+
+#headerSection h1{
+    font-family: cursive;
+    font-size: 25%;
+}
+
+
+input{
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+#dropbox{
+    padding: 10px;
+    border-radius: 7px;
+    width: 24%;
+
+}
+#bodySection{
+    border: 2px solid rgb(213, 211, 211);
+    background-color: white;
+    margin-top: 27px;
+    border-radius: 20%;
+    padding: 10px;
+    width: 30%;   
+}
+
+#back-link a{
+    text-decoration: none;
+    color: rgb(29, 8, 167);
+}
+
+.custom-shape-divider-top-1701349135 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1701349135 svg {
+    position: relative;
+    display: block;
+    width: calc(153% + 1.3px);
+    height: 332px;
+}
+
+.custom-shape-divider-top-1701349135 .shape-fill {
+    fill: #E0DBDB;
+}
+     
+
+
+</style>
+        
+    
+    
+    
+    <br>
+    
+    <center>
+
+        <h1 style="font-size: 300%; color:rgb(133, 74, 252);"> <i class="fa-regular fa-id-card" style="color: rgb(81, 158, 206);"> &nbsp</i>Register<span style="color: rgb(101, 101, 236);">ation</span> </h1>
+        <!-- <h1 style="color: white;">registration</h1> -->
+
+        <div id="container">
+            <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+
+                <input type="text" name="name" placeholder="Enter Name"> 
+                <input type="number" name="mobile" placeholder="Enter Mobile Number"> <br> <br>
+                <input type="password" name="password" placeholder="Enter Password"> 
+                <input type="password" name="cpassword" placeholder="Confirm Password"> <br> <br>
+                <input id="address" type="text" name="address" placeholder="Enter Address"> <br> <br>
+               <center>
+               
+                <div id="imagepart">
+                    Upload Image: <input type="file" name="photo"> 
+                   </div>
+                   <br> 
+               
+                    <div id="role">
+                        Selelct Role: <select name="role">
+                            <option value="1">Voter</option>
+                             <option value="2">Group</option>
+                         </select>
+                    </div>
+                  </center> <br> 
+               
+                
+                <button class="btn btn-outline-primary" style="
+                    padding: 5px; 
+                    font-size:15px;
+                    width:100px;
+                    height:45px;
+                    border-radius: 7px;">Register</button> 
+                    <br> <br>
+                Already User ? <a href="../login.html" class="link-primarylink-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Login here</a> <br> <br>
+                <!-- <a href="index.html" >Home page</a> -->
+                <!-- <i class="fa-solid fa-house" style="color: rgb(0, 13, 255);"></i> 
+                <a href="../index.html" style="color: rgb(31, 7, 242), 226);" >BACK</a> -->
+                
+
+                <!-- <div id="back-link">
+                    <i class="fa-solid fa-house" style="color: rgb(0, 13, 255);"></i> 
+                    <a href="../index.html">H<span style="color: rgb(255, 94, 0);">om</span>e</a>
+                  
+                   </div> -->
+                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-but">
+                        <i class="fa-solid fa-house" style="color: rgb(56, 28, 238);"></i> 
+                      
+                      <a class="btn btn-primary" aria-current="page" href="../index.html">Back</a>
+                  </ul>
+            </form>
+        </div>
+        
+    </center>
+   
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
+
+
+
+
+
+

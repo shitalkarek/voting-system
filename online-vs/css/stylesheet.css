@@ -1,0 +1,69 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    text-align: center;
+    /* background-color: rgb(18, 18, 62); */
+    /* background-color: aquamarine;
+     */
+     background-image: url('../css/loginpage.avif');
+     background-color: black;
+      background-repeat: no-repeat;
+     background-size: cover; 
+     background: transparent;
+     backdrop-filter: blur(90px);
+     
+     
+}
+
+#headerSection{
+    padding: 10px;
+}
+
+#headerSection h1{
+    font-family: cursive;
+    font-size: 25%;
+}
+
+
+input{
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+#dropbox{
+    padding: 10px;
+    border-radius: 7px;
+    width: 24%;
+
+}
+#bodySection{
+    border: 2px solid rgb(213, 211, 211);
+    background-color: white;
+    margin-top: 27px;
+    border-radius: 20%;
+    padding: 10px;
+    width: 30%;   
+}
+
+#back-link a{
+    text-decoration: none;
+    color: rgb(29, 8, 167);
+}
+
+/* 
+#login_button{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    background-color: rgb(111, 111, 237);
+    color: white;
+
+} */
